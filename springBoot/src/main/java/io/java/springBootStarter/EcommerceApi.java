@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //@SpringBootApplication
+
 @EnableAutoConfiguration
 @ComponentScan(basePackages = {"io.java.controller","io.java.service"}) 
 @Configuration
