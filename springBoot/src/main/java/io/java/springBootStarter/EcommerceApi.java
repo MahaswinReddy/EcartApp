@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //@SpringBootApplication
-//comments added for testing for pushing GitHub repo
 @EnableAutoConfiguration
 @ComponentScan(basePackages = {"io.java.controller","io.java.service"}) 
 @Configuration
