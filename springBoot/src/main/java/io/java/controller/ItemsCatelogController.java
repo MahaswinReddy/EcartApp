@@ -18,7 +18,7 @@ import io.java.dto.ItemsCatelogDTO;
 import io.java.service.ItemsCatelogService;
 
 @RestController
-@RequestMapping("/itemsCatelog")
+@RequestMapping(value="/itemsCatelog")
 public class ItemsCatelogController {
 @Autowired
 private ItemsCatelogService itemsCatelogService;
@@ -46,6 +46,15 @@ public void updateItem(@RequestBody ItemsCatelogDTO icObj,@PathVariable int id){
 @DeleteMapping(value="/deleteItem/{id}")
 public void updateItem(@PathVariable int id){
 	itemsCatelogService.deleteItem(id);		
+}
+@RequestMapping(value="/hello")
+public String hello(){
+	return "Hello Maha";		
+}
+@RequestMapping(value="/arryas")
+public String[] testArrayEquals(){
+	String strArr[] = {"Mahi","Sneha","Pravee"};
+	return strArr;		
 }
 
 }

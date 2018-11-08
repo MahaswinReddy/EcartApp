@@ -42,10 +42,11 @@ public class ItemsCatelogService {
 		itemsCatelogRepository.save(icObj);
 	}
 	
-	public void deleteItem(int id) {
+	public int deleteItem(int id) {
 		//List<ItemsCatelogDTO> itemsList = new ArrayList<>();
 		//itemsList.removeIf(p->p.getItemId()== id);
 		itemsCatelogRepository.deleteById(id);
+		return 2;
 	}
 
 }
